@@ -12,6 +12,7 @@
 
 
     <script>
+        var alpha = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o"];
         var educator =["education is the key", "mcClen", "german"];
         var motivate = ["never i can't ,say i can", "paul richard", "italy" ];
         var edu = ["Do your Best and leave the rest", "Samuel Joel", "united kingdom"];
@@ -33,7 +34,7 @@
         for (var i = 0; i < myQouteArray.length; i ++)
         {
             document.write(`<tr>`);
-            document.write(`<td>${i+1}</td>`);
+            document.write(`<td>${alpha[i]}</td>`);
             for(var t = 0; t < myQouteArray[i].length; t++){
                 document.write(`<td> ${myQouteArray[i][t]}</td>`);
             } document.write(`</tr>`);
