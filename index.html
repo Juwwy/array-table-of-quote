@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    
+
+
+
+    <script>
+        var educator =["education is the key", "mcClen", "german"];
+        var motivate = ["never i can't ,say i can", "paul richard", "italy" ];
+        var edu = ["Do your Best and leave the rest", "Samuel Joel", "united kingdom"];
+        var song = ["Never say never", "Justin Bieber", "USA"];
+        var proverb =["He that want to eat with the devil must have a long spoon", "Clifford Ruben", "fiji"];
+        var wiseWord = ["Only a fool trust his enemy, if you want peace you must be ready for war", "Dr. Odeh Lemeul", "Nigeria"];
+        var mot =["Only the early bird eat the worm", "Success Paul", "USA"];
+        var truth = ["The greatest mistake in life, is holding on to someone that already let you go", "Jeffrey cyruff", "USA"];
+        var truthTalk = ["Hatred is taught, Kindness is natural", "Paul Xeus" ,"Netherland"];
+        var musicTalk = ["Dont you give up", "Justin Bieber", "USA"];
+        var trueTalk = ["Nobody can destroy an iron but its own can", "Success Timothy", "Canada"];
+        var  fact = ["Sometimes it's better to find your own direction", "James claire", "Japan"];
+        var factReason  = ["Disconnect from the people who are holding you back", "Joseph Andrew", "Australia"];
+        var greenPoint = ["never judge book by cover", "Williams samson", "Cyprus"];
+        var point = ["If leadership is by size, then the lion will never be king of the jungle", "Abraham jeffrey", "Netherland"];
+    var myQouteArray =[educator, motivate, edu, song, proverb, wiseWord, mot, truth, truthTalk, musicTalk, trueTalk,fact, factReason, greenPoint, point];
+        
+    document.write(`<table border =1><tr><th>S/N</th><th>Quotes</th><th>Name</th><th>Nationality</th></tr>`);
+        for (var i = 0; i < myQouteArray.length; i ++)
+        {
+            document.write(`<tr>`);
+            document.write(`<td>${i+1}</td>`);
+            for(var t = 0; t < myQouteArray[i].length; t++){
+                document.write(`<td> ${myQouteArray[i][t]}</td>`);
+            } document.write(`</tr>`);
+        }document.write(`</tables>`);
+    </script>
+</body>
+</html>
